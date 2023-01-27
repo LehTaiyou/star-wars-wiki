@@ -1,0 +1,33 @@
+<h1>Naves</h1>
+<div class="lista">
+<ul> Nome
+    <li *ngFor="let starship of starships">{{starship.name}}</li>
+</ul>
+<ul> Modelo
+    <li *ngFor="let starship of starships">{{starship.model}}</li>
+</ul>
+<ul> Preço
+    <li *ngFor="let starship of starships">{{starship.cost_in_credits}}</li>
+</ul>
+<ul> Tripulação
+    <li *ngFor="let starship of starships">{{starship.crew}}</li>
+</ul>
+<ul> Passageiros
+    <li *ngFor="let starship of starships">{{starship.passengers}}</li>
+</ul>
+<ul> Hiperpropulsor
+    <li *ngFor="let starship of starships">{{starship.hyperdrive_rating}}</li>
+</ul>
+
+</div>
+<div class="paginator"><mat-paginator #paginator
+    class="demo-paginator"
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [disabled]="disabled"            
+    [hidePageSize]="hidePageSize"
+    [pageSize]="10"
+    [pageIndex]="pageIndex"
+    aria-label="Select page">
+</mat-paginator>
+</div>

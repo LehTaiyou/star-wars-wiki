@@ -1,0 +1,30 @@
+<h1>Planetas</h1>
+<div class="lista">
+<ul> Nome
+    <li *ngFor="let planet of planets">{{planet.name}}</li>
+</ul>
+<ul> Clima
+    <li *ngFor="let planet of planets">{{planet.climate}}</li>
+</ul>
+<ul> Gravidade
+    <li *ngFor="let planet of planets">{{planet.gravity}}</li>
+</ul>
+<ul> Terreno
+    <li *ngFor="let planet of planets">{{planet.terrain}}</li>
+</ul>
+<ul> Período Orbital
+    <li *ngFor="let planet of planets">{{planet.orbital_period}}</li>
+</ul>
+
+</div>
+<div class="paginator"><mat-paginator #paginator
+    class="demo-paginator"
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [disabled]="disabled"             
+    [hidePageSize]="hidePageSize"
+    [pageSize]="10"
+    [pageIndex]="pageIndex"
+    aria-label="Select page">
+</mat-paginator>
+</div>

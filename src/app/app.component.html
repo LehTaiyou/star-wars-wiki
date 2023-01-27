@@ -1,0 +1,16 @@
+<app-nav-bar [opened]="menuOpened" (menuToggle)="setMenuState($event)"></app-nav-bar>
+
+
+
+<div class="content-fluid">
+    
+    <app-full-banner></app-full-banner>
+    <router-outlet></router-outlet>
+    
+    
+
+    
+</div>
+
+<app-footer></app-footer>
+<div class="backdrop" (click)="closeMenu()" *ngIf="menuOpened"></div>

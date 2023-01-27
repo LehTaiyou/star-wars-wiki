@@ -1,0 +1,38 @@
+<h1>veículos</h1>
+
+<div class="lista">  
+<ul> Nome
+    <li *ngFor="let vehicle of vehicles">{{vehicle.name}}</li>
+</ul>
+<ul> Modelo
+    <li *ngFor="let vehicle of vehicles">{{vehicle.model}}</li>
+</ul>
+<ul> Preço
+    <li *ngFor="let vehicle of vehicles">{{vehicle.cost_in_credits}}</li>
+</ul>
+<ul> Tripulação
+    <li *ngFor="let vehicle of vehicles">{{vehicle.crew}}</li>
+</ul>
+<ul> Passageiros
+    <li *ngFor="let vehicle of vehicles">{{vehicle.passengers}}</li>
+</ul>
+<ul> Fabricante
+    <li *ngFor="let vehicle of vehicles">{{vehicle.manufacturer}}</li>
+</ul>
+<ul> Tipo de Veículo
+    <li *ngFor="let vehicle of vehicles">{{vehicle.vehicle_class}}</li>
+</ul>
+
+
+</div>
+<div class="paginator"><mat-paginator #paginator
+    class="demo-paginator"
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [disabled]="disabled"            
+    [hidePageSize]="hidePageSize"
+    [pageSize]="10"
+    [pageIndex]="pageIndex"
+    aria-label="Select page">
+</mat-paginator>
+</div>

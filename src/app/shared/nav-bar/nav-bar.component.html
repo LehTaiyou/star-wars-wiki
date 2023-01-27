@@ -1,0 +1,48 @@
+<nav class="navbar navbar-dark bg-dark fixed-top" [ngClass]="{'sidebar-open': opened}">
+
+    <button class="navbar-toggler d-lg-none" type="button" (click)="toggle()">
+        <img src="assets/images/hamburger.gif" alt="Menu">
+    </button>
+    <a class="navbar-brand flex-grow-1" href="#">
+        <img src="assets/imagens-site/pngwing.com.png" class="my-1 mx-2" alt="Star Wars">
+    </a>
+
+    <ul class="nav text-white d-none d-lg-flex">
+        <!-- <li class="nav-item d-xl-none">
+            <a class="nav-link active text-reset" href="#">Navegar</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link active text-reset" href="#">Inicío</a>
+        </li> -->
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="films/">Filmes</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="characters/">Personagens</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="planets/">Planetas</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="species/">Espécies</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="vehicles/">Veículos</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="starships/">Naves</a>
+        </li>
+    </ul>
+
+    <!-- <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Busca">
+    </form> -->
+
+    <div class="media text-white p-2 d-none d-lg-flex">
+        <img src="assets/imagens-site/HJNGDLG.png" alt="Avatar" class="mr-2">
+        <div class="media-body">
+            <p class="h6 m-0 text-uppercase">Din Djarin</p>
+        </div>
+    </div>
+
+</nav>

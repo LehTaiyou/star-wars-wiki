@@ -1,0 +1,36 @@
+<h1>Espécies</h1>
+<div class="lista">
+<ul> Nome
+    <li *ngFor="let specie of species">{{specie.name}}</li>
+</ul>
+<ul> Expectativa de Vida
+    <li *ngFor="let specie of species">{{specie.average_lifespan}}</li>
+</ul>
+<ul> Classe
+    <li *ngFor="let specie of species">{{specie.classification}}</li>
+</ul>
+<ul> Língua
+    <li *ngFor="let specie of species">{{specie.language}}</li>
+</ul>
+<ul> Altura
+    <li *ngFor="let specie of species">{{specie.average_height}}</li>
+</ul>
+<ul> Terra Natal
+    <li *ngFor="let planet of planets">{{planet.name}}</li> 
+</ul>
+<ul> Racionalidade
+    <li *ngFor="let specie of species">{{specie.designation}}</li>
+</ul>
+
+</div>
+<div class="paginator"><mat-paginator #paginator
+    class="demo-paginator"
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [disabled]="disabled"             
+    [hidePageSize]="hidePageSize"
+    [pageSize]="10"
+    [pageIndex]="pageIndex"
+    aria-label="Select page">
+</mat-paginator>
+</div>

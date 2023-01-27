@@ -1,0 +1,18 @@
+<div class="title-item">
+    <img [src]="title.cover" alt="Título">
+    <div class="items">
+        <div class="left-side">
+            <button type="button" class="btn-play" (click)="this.getFilms(title.id)"><i class="material-icons">info</i></button>
+            <!-- <span class="material-symbols-outlined"  (click)="this.getFilms(title.id)">
+                info
+                </span> -->
+            <h2>{{ title.name }}</h2>
+            <ul class="infos">
+            </ul>
+            <ul class="categories">
+            <li *ngFor="let category of title.categories">{{category}}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+<h1>Personagens</h1>
+<div class="lista">
+<ul> Nome
+    <li *ngFor="let personagem of personagens">{{personagem.name}}</li> 
+</ul>
+<ul> Data de Nascimento
+    <li *ngFor="let personagem of personagens">{{personagem.birth_year}}</li> 
+</ul>
+<ul> Gênero
+    <li *ngFor="let personagem of personagens">{{personagem.gender}}</li> 
+</ul>
+<ul> Espécie
+    <li *ngFor="let specie of species">{{specie.name}}</li> 
+</ul>
+<ul> Peso
+    <li *ngFor="let personagem of personagens">{{personagem.mass}}</li> 
+</ul>
+<ul> Altura
+    <li *ngFor="let personagem of personagens">{{personagem.height}}</li> 
+</ul>
+<ul> Terra Natal
+    <li *ngFor="let planet of planets">{{planet.name}}</li> 
+</ul>
+<ul> Cor da Pele
+    <li *ngFor="let personagem of personagens">{{personagem.skin_color}}</li> 
+</ul>
+</div>
+<div class="paginator"><mat-paginator #paginator
+               class="demo-paginator"
+               (page)="handlePageEvent($event)"
+               [length]="length"
+               [disabled]="disabled"             
+               [hidePageSize]="hidePageSize"
+               [pageSize]="10"
+               [pageIndex]="pageIndex"
+               aria-label="Select page">
+</mat-paginator>
+</div>

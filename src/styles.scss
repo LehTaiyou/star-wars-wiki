@@ -1,0 +1,44 @@
+
+body {
+    background: url(./assets/imagens-site/cropped-1920-1080-653613.jpg);
+    // background: url(./assets/imagens-site/star-wars-backgrounds-29_9e72b83c.png); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #1B1B1B!important;
+    padding-top: 60px;
+    min-height: 2000px;
+    
+    
+    
+}
+.backdrop {
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+        
+    }
+    .navbar.bg-dark {
+        background-color: black!important;
+        background-repeat: repeat-x;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'starwars2';
+    src: url('../src/assets/Starjedi.ttf') format('truetype') ;
+}
+.demo-paginator{
+    background-color: rgba(0, 0, 0, 0.831);
+    max-height: 40%;
+}

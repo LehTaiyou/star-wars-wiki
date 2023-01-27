@@ -1,0 +1,33 @@
+<div *ngIf="film!" class="table" id="tabela-filmes">
+    <table>
+        <thead>
+<h2 >{{film!.title}}</h2>
+<h3>Diretor: {{film!.director}}</h3>
+<h3> Produtores {{film!.producer}}</h3>
+<h3>Data de Lançamento: {{film!.release_date}}</h3>
+<h3>Episódio {{film!.episode_id}}</h3>
+<!-- <p>{{film!.opening_crawl}}</p> -->
+<div class="lista">
+<ul> Personagens
+    <li *ngFor="let personagem of personagens">{{personagem}}</li>
+    <!-- <li *ngFor="let personagem of film!.vehicles">{{personagem}}</li>
+        <li *ngFor="let personagem of film!.species">{{personagem}}</li>
+        <li *ngFor="let personagem of film!.planets">{{personagem}}</li> -->
+        
+    </ul> 
+    <ul id="planets"> Planetas
+        <li *ngFor="let personagem of planet">{{personagem}}</li>
+    </ul>
+    <ul id="species"> Espécies
+    <li *ngFor="let personagem of specie">{{personagem}}</li>
+</ul>
+<ul id="vehicles"> Veículos
+    <li *ngFor="let personagem of vehicle">{{personagem}}</li>
+</ul>
+<ul id="starships"> Naves
+    <li *ngFor="let personagem of starship">{{personagem}}</li>
+</ul>
+</div>
+</thead>
+</table>
+</div>
